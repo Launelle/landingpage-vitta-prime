@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitta Prime | Cuidando de sua família com excelência</title>
+    <!-- Fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #2c3e50;
+        }
+
+        header, main, footer {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+        }
+
+        section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+    margin-bottom: 10px;
+    color: #004d40;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 3px solid #004d40;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #00695c;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #004d40;
+        }
+
+        form input, form label {
+            display: block;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            width: 100%;
+            padding: 6px;
+            font-size: 13px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus {
+            border-color: #26a69a;
+            outline: none;
+        }
+
+        form input[type="submit"] {
+            background-color: #26a69a;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #00796b;
+        }
+
+        .formulario {
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+        .equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+        .membro {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+        .membro img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .equipe {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .membro {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .formulario {
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            form input[type="text"],
+            form input[type="email"],
+            form input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+            .descricao {
+            font-size: 13px;
+            color: #555;
+            margin-top: 10px;
+            max-width: 280px;
+            text-align: center;
+        }
+        .membro img[src*="icone-"] {
+            width: 64px !important;
+            height: 64px;
+            margin-top: 12px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .membro img[src*="icone-"]:hover {
+            transform: scale(1.1);
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Vitta Prime</h1>
+        <p style="text-align: center; font-size: 1.2rem; color: #555; margin-top: 10px;">Cuidando de sua família com excelência.</p>
+    </header>
+
+    <main>
+        <section class="servicos">
+<h2>Serviços que oferecemos</h2>
+<div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 20px; flex-wrap: wrap;">
+    <img src="atendimento.jpg" alt="Atendimento médico humanizado" style="width: 320px; height: auto; border-radius: 8px;">
+    <img src="exames.jpg" alt="Exames laboratoriais" style="width: 320px; height: auto; border-radius: 8px;">
+</div>
+<p>Oferecemos atendimento médico em diversas especialidades, exames laboratoriais e de imagem, nutrição, psicologia e cuidados preventivos. Nosso objetivo é proporcionar qualidade, segurança e bem-estar com uma equipe experiente e estrutura moderna.</p>
+        </section>
+
+        <section class="equipe">
+  <div style="width: 100%; text-align: center;">
+  <h2 style="margin-bottom: 8px;">Equipe</h2>
+  <hr style="width: 60px; height: 3px; background-color: #00695c; border: none; margin: 0 auto 20px auto;">
+</div>
+            <div class="membro">
+    <img src="foto1.jpg" alt="Dr. Lucas Andrade" style="width: 320px; height: auto; border-radius: 8px;">
+    <img src="icone-medico.png" alt="Ícone Médico" style="width: 48px; margin-top: 12px;">
+<p><strong>Dr. Lucas Andrade</strong><br>Médico</p>
+<p class="descricao">Especialista em clínica geral, Dr. Lucas possui vasta experiência no cuidado integral da saúde familiar.</p>
+</div>
+            <div class="membro">
+    <img src="foto2.jpg" alt="Dra. Renata Lima" style="width: 320px; height: auto; border-radius: 8px;">
+    <img src="icone-exames.png" alt="Ícone Exames" style="width: 48px; margin-top: 12px;">
+<p><strong>Dra. Renata Lima</strong><br>Exames Laboratoriais e de Imagem</p>
+<p class="descricao">Responsável pelos diagnósticos laboratoriais e de imagem, prezando pela precisão e agilidade nos resultados.</p>
+</div>
+            <div class="membro">
+    <img src="foto3.jpg" alt="Bruna Teixeira" style="width: 320px; height: auto; border-radius: 8px;">
+    <img src="icone-nutricao.png" alt="Ícone Nutrição" style="width: 48px; margin-top: 12px;">
+<p><strong>Bruna Teixeira</strong><br>Aconselhamento Nutricional</p>
+<p class="descricao">Atua promovendo hábitos saudáveis por meio de planos alimentares personalizados para todas as idades.</p>
+</div>
+        </section>
+
+        <section class="formulario">
+            <h2>Cadastre-se para saber mais</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vitta Prime. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
